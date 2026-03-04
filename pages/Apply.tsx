@@ -62,7 +62,7 @@ const Apply: React.FC = () => {
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-bold text-slate-700 dark:text-slate-300 ml-1">{t.forms.phone}</label>
-                <input required type="tel" className="w-full px-5 py-4 rounded-2xl border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50 dark:bg-slate-800 dark:text-white transition-all" placeholder="+998 90 123 45 67" />
+                <input required type="tel" className="w-full px-5 py-4 rounded-2xl border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50 dark:bg-slate-800 dark:text-white transition-all" placeholder="+998 55 055 22 77" />
               </div>
             </div>
 

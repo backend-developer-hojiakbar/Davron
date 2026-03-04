@@ -32,9 +32,9 @@ const INITIAL_SITE_INFO: SiteInfo = {
     EN: "Official and reliable job opportunities across Europe and the world."
   },
   heroImage: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1920&q=80",
-  phone: "+998 71 234 56 78",
-  email: "info@imkon.uz",
-  address: "Toshkent sh., Chilonzor tumani, Bunyodkor ko'chasi, 42-uy",
+  phone: "+998 55 055 22 77",
+  email: "imkonxba.info@gmail.com",
+  address: "Toshkent sh., Mirzo Ulug'bek tumani, Maxtumquli ko'chasi, 45-uy",
   stats: {
     resumes: "345K+",
     vacancies: "12K+",

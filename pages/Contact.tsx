@@ -1,8 +1,11 @@
 
 import React from 'react';
 import { Phone, Mail, MapPin, Send, Instagram, Facebook, Clock } from 'lucide-react';
+import { useGlobal } from '../GlobalContext';
 
 const Contact: React.FC = () => {
+  const { siteInfo } = useGlobal();
+
   return (
     <div className="pt-32 pb-24 bg-white dark:bg-slate-950 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,8 +19,7 @@ const Contact: React.FC = () => {
                 <div className="w-14 h-14 bg-indigo-50 dark:bg-indigo-900/30 rounded-2xl flex items-center justify-center text-indigo-600 dark:text-indigo-400 flex-shrink-0 group-hover:scale-110 transition-transform"><Phone /></div>
                 <div>
                   <div className="text-sm font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-1">Telefon</div>
-                  <div className="text-xl font-bold text-slate-900 dark:text-white">+998 71 234 56 78</div>
-                  <div className="text-xl font-bold text-slate-900 dark:text-white">+998 90 999 00 11</div>
+                  <div className="text-xl font-bold text-slate-900 dark:text-white">{siteInfo.phone}</div>
                 </div>
               </div>
               
@@ -25,8 +27,7 @@ const Contact: React.FC = () => {
                 <div className="w-14 h-14 bg-emerald-50 dark:bg-emerald-900/30 rounded-2xl flex items-center justify-center text-emerald-600 dark:text-emerald-400 flex-shrink-0 group-hover:scale-110 transition-transform"><Mail /></div>
                 <div>
                   <div className="text-sm font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-1">Email</div>
-                  <div className="text-xl font-bold text-slate-900 dark:text-white">info@imkon.uz</div>
-                  <div className="text-sm text-slate-500 dark:text-slate-400">career@imkon.uz</div>
+                  <div className="text-xl font-bold text-slate-900 dark:text-white">{siteInfo.email}</div>
                 </div>
               </div>
 
@@ -34,8 +35,7 @@ const Contact: React.FC = () => {
                 <div className="w-14 h-14 bg-rose-50 dark:bg-rose-900/30 rounded-2xl flex items-center justify-center text-rose-600 dark:text-rose-400 flex-shrink-0 group-hover:scale-110 transition-transform"><MapPin /></div>
                 <div>
                   <div className="text-sm font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-1">Manzil</div>
-                  <div className="text-xl font-bold text-slate-900 dark:text-white">Toshkent sh., Chilonzor tumani</div>
-                  <div className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Bunyodkor ko'chasi, 42-uy. Mo'ljal: Mirzo Ulug'bek metrosi</div>
+                  <div className="text-xl font-bold text-slate-900 dark:text-white">{siteInfo.address}</div>
                 </div>
               </div>
 
