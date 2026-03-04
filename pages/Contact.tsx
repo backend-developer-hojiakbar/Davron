@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, Mail, MapPin, Send, Instagram, Facebook, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, Instagram, Facebook, Clock, Building2 } from 'lucide-react';
 import { useGlobal } from '../GlobalContext';
 
 const Contact: React.FC = () => {
@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
             <h1 className="text-4xl lg:text-6xl font-display font-extrabold text-slate-900 dark:text-white mb-8">Biz bilan <span className="text-indigo-600 dark:text-indigo-400">Bog'laning</span></h1>
             <p className="text-lg text-slate-600 dark:text-slate-400 mb-12">Savollaringiz bormi? Mutaxassislarimiz sizga yordam berishga doim tayyor. Bizning ofisimizga tashrif buyuring yoki qo'ng'iroq qiling.</p>
             
-            <div className="space-y-10">
+            <div className="space-y-10 mb-12">
               <div className="flex items-start space-x-6 group">
                 <div className="w-14 h-14 bg-indigo-50 dark:bg-indigo-900/30 rounded-2xl flex items-center justify-center text-indigo-600 dark:text-indigo-400 flex-shrink-0 group-hover:scale-110 transition-transform"><Phone /></div>
                 <div>
@@ -30,12 +30,13 @@ const Contact: React.FC = () => {
                   <div className="text-xl font-bold text-slate-900 dark:text-white">{siteInfo.email}</div>
                 </div>
               </div>
-
+              
               <div className="flex items-start space-x-6 group">
                 <div className="w-14 h-14 bg-rose-50 dark:bg-rose-900/30 rounded-2xl flex items-center justify-center text-rose-600 dark:text-rose-400 flex-shrink-0 group-hover:scale-110 transition-transform"><MapPin /></div>
                 <div>
                   <div className="text-sm font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-1">Manzil</div>
                   <div className="text-xl font-bold text-slate-900 dark:text-white">{siteInfo.address}</div>
+                  <div className="text-sm text-slate-500 font-medium">Mo'ljal: Amir Temur xiyoboni</div>
                 </div>
               </div>
 
@@ -48,6 +49,7 @@ const Contact: React.FC = () => {
                 </div>
               </div>
             </div>
+
           </div>
 
           <div className="bg-slate-50 dark:bg-slate-900 p-10 lg:p-16 rounded-[48px] border border-slate-100 dark:border-slate-800 shadow-sm animate-in fade-in slide-in-from-right-8 duration-1000">
@@ -67,15 +69,29 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        {/* Map Placeholder */}
-        <div className="mt-24 h-[500px] w-full bg-slate-200 dark:bg-slate-900 rounded-[56px] overflow-hidden relative border border-slate-100 dark:border-slate-800 shadow-inner">
-          <div className="absolute inset-0 flex items-center justify-center text-slate-400 dark:text-slate-600 font-bold">
-            <div className="text-center">
-              <MapPin className="w-16 h-16 mx-auto mb-4 opacity-20" />
-              <p>Google Maps Integration</p>
-              <p className="text-sm mt-2">Toshkent, O'zbekiston</p>
-              <p className="text-[10px] mt-1">41.2827° N, 69.2033° E</p>
-            </div>
+        {/* Google Map Integration */}
+        <div className="mt-24 h-[500px] w-full bg-slate-200 dark:bg-slate-900 rounded-[56px] overflow-hidden relative border border-slate-100 dark:border-slate-800 shadow-2xl group">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.682143428458!2d69.2797371!3d41.3123333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2931f41f23%3A0x81095e06b654b845!2sHotel%20Uzbekistan!5e0!3m2!1suz!2s!4v1709533000000!5m2!1suz!2s" 
+            width="100%" 
+            height="100%" 
+            style={{ border: 0 }} 
+            allowFullScreen={true} 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+            title="IMKON Agency Location"
+            className="w-full h-full transition-all duration-700 opacity-100"
+          ></iframe>
+          <div className="absolute bottom-6 left-6 right-6 md:right-auto">
+            <a 
+              href="https://maps.google.com/?q=45+Maxtumquli+ko'chasi,+Tashkent" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 bg-white dark:bg-slate-800 px-6 py-3 rounded-2xl shadow-xl text-slate-900 dark:text-white font-bold hover:bg-blue-600 hover:text-white transition-all transform hover:-translate-y-1"
+            >
+              <MapPin className="w-5 h-5 text-blue-600 group-hover:text-white" />
+              <span>Google Maps'da ochish</span>
+            </a>
           </div>
         </div>
       </div>
