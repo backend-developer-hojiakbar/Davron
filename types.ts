@@ -34,6 +34,7 @@ export interface SiteInfo {
   phone: string;
   email: string;
   address: string;
+  license: string;
   stats: {
     resumes: string;
     vacancies: string;

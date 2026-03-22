@@ -205,7 +205,7 @@ export const ADVANTAGES = [
   {
     icon: <ShieldCheck className="w-8 h-8 text-indigo-600" />,
     title: { UZ: "Rasmiy litsenziya", RU: "Официальная лицензия", EN: "Official License" },
-    desc: { UZ: "Davlat tomonidan berilgan ruxsatnoma.", RU: "Разрешение государственного образца.", EN: "State-authorized permission." }
+    desc: { UZ: "Davlat tomonidan berilgan №1285474-sonli ruxsatnoma.", RU: "Разрешение государственного образца №1285474.", EN: "State-authorized permission №1285474." }
   },
   {
     icon: <Briefcase className="w-8 h-8 text-indigo-600" />,

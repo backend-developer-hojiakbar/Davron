@@ -35,6 +35,7 @@ const INITIAL_SITE_INFO: SiteInfo = {
   phone: "+998 55 055 22 77",
   email: "imkonxba.info@gmail.com",
   address: "Toshkent sh., Mirzo Ulug'bek tumani, Maxtumquli ko'chasi, 45-uy",
+  license: "📄 Litsenziya No.1285474",
   stats: {
     resumes: "345K+",
     vacancies: "12K+",

@@ -103,7 +103,7 @@ const AppContent: React.FC = () => {
               <div>
                 <h4 className="text-lg font-bold mb-6">Litsenziya</h4>
                 <p className="text-slate-400 text-xs leading-relaxed">
-                  №00124-sonli litsenziya asosida faoliyat yuritamiz.
+                  {siteInfo.license} asosida faoliyat yuritamiz.
                 </p>
                 <div className="mt-6 pt-6 border-t border-slate-800">
                   <span className="text-[10px] text-slate-500 uppercase tracking-widest font-black">Official Partner of EU Recruitment</span>
